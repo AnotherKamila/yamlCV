@@ -1,0 +1,42 @@
+name: Your Name
+photo: some_url.jpg
+tagline: one-line summary of who you are
+email: someone@example.com
+phone: +47 4742 42
+website: https://example.com
+location: Earth, Solar System
+
+# Set the order of sections here.
+sections:
+  - experience
+  - education
+  - skills
+
+data:
+  education:
+    title: Education
+    items:
+      - 2016–present: |
+          Department of Computer Science and Cosmology, Earth, Solar System:
+          Master's degree
+
+  experience:
+    title: Work Experience
+    items:
+      - current: |
+          - Chief Architect, Universe Inc.
+          - Assistant in Entropy Management, Universe Inc.
+      - summer 2015: Site Reliability Engineering intern at [Milky Way](https://en.wikipedia.org/wiki/Milky_Way)
+
+  skills:
+    title: Skills
+    text: |
+        You can always add text, items, or both, or any. Text will be rendered before the itemized thing. You can put a list here:
+
+        - like
+        - this
+
+        Or anything else -- it's just Markdown.
+    items:
+      - Real world example: |
+            [My website](https://github.com/AnotherKamila/kamila.is/blob/master/_data/cv.yml).
