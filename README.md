@@ -20,7 +20,14 @@ First, **tell Jekyll your data**. The simplest way is to add a `_data/cv.yml` fi
 
 Then, **stuff `cv.html` into Jekyll**. There are multiple ways to achieve that, the simplest being just copying `cv.html` into `something.html` (and adding a front matter).
 
-A method easier to maintain is to add this repository as a Git submodule, symlink `cv.html` into `_includes/`, and then `{% include cv.html %}` in pages. You can see this setup [on my website](https://github.com/AnotherKamila/kamila.is/blob/master/cv/index.html).
+A method easier to maintain is to add this repository as a Git submodule, symlink `cv.html` into `_includes/`, and then `{% include cv.html %}` in pages. You can see this setup [on my website](https://github.com/AnotherKamila/kamila.is/blob/master/cv/index.html). How to:
+
+```sh
+cd <your-site>/_includes  # you need to put it under _includes because jekyll doesn't like arbitrary symlinks
+git submodule add https://github.com/AnotherKamila/yamlCV.git
+ln -s yamlCV/cv.html .
+git submodule update  # re-run this when you want to update
+```
 
 Customization
 -------------
