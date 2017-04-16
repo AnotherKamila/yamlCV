@@ -26,7 +26,6 @@ A method easier to maintain is to add this repository as a Git submodule, symlin
 cd <your-site>/_includes  # you need to put it under _includes because jekyll doesn't like arbitrary symlinks
 git submodule add https://github.com/AnotherKamila/yamlCV.git
 ln -s yamlCV/cv.html .
-git pull --recurse-submodules  # run this when you want to update all submodules to latest
 ```
 
 Customization
