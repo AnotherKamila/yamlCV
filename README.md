@@ -8,7 +8,7 @@ Example: [kamila.is/awesome](https://kamila.is/awesome) :-)
 What this is
 ------------
 
-Takes YAML as input (such as [this](https://github.com/AnotherKamila/kamila.is/blob/master/_data/cv.yml)) and produces pretty HTML (such as [this](https://kamila.is/awesome)) using Jekyll.
+Takes YAML as input (such as [this](https://github.com/AnotherKamila/kamila.is/blob/master/_data/cv.yml)) and produces pretty HTML (such as [this](https://kamila.is/awesome)) using Jekyll. Works also with GitHub Pages.
 
 **Why:** The YAML input is maintainable and easy to change, so updating my CV is no longer annoying.
 And Jekyll integration makes my pretty data also look pretty on my pretty website, automatically.
@@ -16,7 +16,7 @@ And Jekyll integration makes my pretty data also look pretty on my pretty websit
 How to use
 ----------
 
-First, **tell Jekyll your data**. The simplest way is to add a `_data/cv.yml` file. There are other ways to do it, but this is what the template expects by default. The syntax is hopefully obvious from [this example](./example-data.yml).
+First, **tell Jekyll your data**. The simplest way is to add a `_data/cv.yml` file. The syntax is hopefully obvious from [this example](./example-data.yml).
 
 Then, **stuff `cv.html` into Jekyll**. There are multiple ways to achieve that, the simplest being just copying `cv.html` into `something.html` (and adding a front matter).
 
